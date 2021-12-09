@@ -1,0 +1,120 @@
+<script>
+    for (var i = 1; i < 10; i++)
+    {
+        a=i;
+        for (var j = i; j < 10; j++)
+        {
+            b=j;
+            for (var k = j; k < 10; k++)
+            {
+                c=k;
+                if (100*a+10*b+c==a*a*a+b*b*b+c*c*c)
+                {
+                    console.log(a,b,c);
+                }
+                if (100*a+10*c+b==a*a*a+b*b*b+c*c*c)
+                {
+                    console.log(a,c,b);
+                }
+                if (100*b+10*c+a==a*a*a+b*b*b+c*c*c)
+                {
+                    console.log(b,c,a);
+                }
+                if (100*b+10*a+c==a*a*a+b*b*b+c*c*c)
+                {
+                    console.log(b,a,c);
+                }
+                if (100*c+10*a+b==a*a*a+b*b*b+c*c*c)
+                {
+                    console.log(c,a,b);
+                }
+                if (100*c+10*b+a==a*a*a+b*b*b+c*c*c)
+                {
+                    console.log(c,b,a);
+                }
+            }
+        }
+    }
+    //-----------------------------------------------//
+    Money=369;
+    if (Money>200)
+    {
+        a=Math.floor(Money/200);
+        console.log(a+" 200");
+        Money=Money-200*a;
+    }
+    if (Money>100)
+    {
+        a=Math.floor(Money/100);
+        console.log(a+" 100");
+        Money=Money-100*a;
+    }
+    if (Money>50)
+    {
+        a=Math.floor(Money/50);
+        console.log(a+" 50");
+        Money=Money-50*a;
+    }
+    if (Money>20)
+    {
+        a=Math.floor(Money/20);
+        console.log(a+" 20");
+        Money=Money-20*a;
+    }
+    if (Money>10)
+    {
+        a=Math.floor(Money/10);
+        console.log(a+" 10");
+        Money=Money-10*a;
+    }
+    if (Money>5)
+    {
+        a=Math.floor(Money/5);
+        console.log(a+" 5");
+        Money=Money-5*a;
+    }
+    if (Money>1)
+    {
+        a=Math.floor(Money/1);
+        console.log(a+" 1");
+        Money=Money-a;
+    }
+    creditNum="378760174961857";
+    noCheckNum=creditNum.slice(0,creditNum.length-1);
+    sumNum="";
+    for (var i=1;i<noCheckNum.length+1;i++)
+    {
+        if (i%2==0)
+        {
+            var value = parseInt(noCheckNum.charAt(i-1)*2); 
+            sum = 0;
+            while (value) {
+                sum += value % 10;
+                value = Math.floor(value / 10);
+            }
+            sumNum+=sum;
+        }
+        else
+        {
+            sumNum+=noCheckNum.charAt(i-1);
+        }
+    }
+    console.log(sumNum);
+
+
+    var value = parseInt(sumNum);
+    res = 0;
+    while (value) {
+        res += value % 10;
+        value = Math.floor(value / 10);
+    }
+    res=10-res%10
+    if (res==creditNum[creditNum.length-1])
+    {
+        console.log("valid");
+    }
+    else
+    {
+        console.log("invalid");
+    }
+</script>
