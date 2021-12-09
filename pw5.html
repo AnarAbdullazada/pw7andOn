@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form method="post" class="form1" name="myForm1">
+            <input name="name" placeholder="name">
+            <input name="surname" placeholder="surname">
+            <input name="email" placeholder="email">
+        </form>
+        <form method="post" class="form2" name="myForm2"></form>
+    </body>
+    <script>
+        info={A:[["1?","1",[1,2,3]],["2?","2",[1,2,3]],["3?","3",[1,2,3]]], B:[["1?","1"]]};
+        for (var i=0; i<info.A.length; i++)
+        {
+            Qp=document.createElement("p");
+            Ap=document.createElement("p");
+            document.body.querySelector(".form2").appendChild(Qp);
+            Qp.innerHTML=info.A[i][0];
+            for (var j=0; j<info.A[2].length; j++)
+            {
+                console.log(j);
+                Vp=document.createElement("input");
+                document.body.querySelector(".form2").appendChild(Vp);
+                Vp.setAttribute("type","radio");
+                Vp.value=info.A[i][2][j];
+                Vp.className=info.A[i][2][j];
+                Vp.name="Single"+i;
+                Lp=document.createElement("lebel");
+                document.body.querySelector(".form2").appendChild(Lp);
+                Lp.setAttribute("for",info.A[i][2][j])
+                Lp.innerText=info.A[i][2][j];
+            }
+        }
+        for (var i=0; i<info.B.length; i++)
+        {
+            Qp=document.createElement("p");
+            Ap=document.createElement("textarea");
+            Ap.name="Area"+i;
+            document.body.querySelector(".form2").appendChild(Qp);
+            document.body.querySelector(".form2").appendChild(Ap);
+            Qp.innerHTML=info.B[i][0];
+        }
+
+        Sp=document.createElement("input");
+        Sp.setAttribute("type","button");
+        Sp.value="Submit";
+        Sp.setAttribute("onclick","Submit()")
+        document.body.querySelector(".form2").appendChild(Sp);
+        
+
+        function Submit()
+        {
+            document.body.querySelector(".form2").submit;
+        }
+    </script>
+</html>
