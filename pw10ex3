@@ -1,0 +1,56 @@
+<html>
+<head>
+    <style>
+        .variants_p
+        {
+            display: inline-block;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body style="background-color: black; color: white;">
+    <p>Are the HTML tags and elements the same thing?</p>
+<div class="VAD0">
+<lebel for="0">yes</lebel>
+<lebel for="1">no</lebel>
+<div id="0">
+<input type="radio" id="0" class="variants_p" name="0">
+<input type="radio" id="1" class="variants_p" name="0">
+</div></div>
+<hr>
+<p>Can we display a web page inside a web page or Is nesting of webpages possible?</p>
+<div class="VAD1">
+<lebel for="0">yes</lebel>
+<lebel for="1">no</lebel>
+<div id="1">
+<input type="radio" id="0" class="variants_p" name="1">
+<input type="radio" id="1" class="variants_p" name="1">
+</div></div>
+<hr>
+<p>Is it possible to change an inline element into a block level element?</p>
+<div class="VAD2">
+<lebel for="0">yes</lebel>
+<lebel for="1">no</lebel>
+<div id="2"><input type="radio" id="0" class="variants_p" name="2">
+<input type="radio" id="1" class="variants_p" name="2">
+</div></div>
+<hr>
+<p>Is the &lt;datalist&gt; tag and &lt;select&gt; tag same?</p>
+<div class="VAD3">
+<lebel for="0">yes</lebel>
+<lebel for="1">no</lebel><div id="3">
+<input type="radio" id="0" class="variants_p" name="3">
+<input type="radio" id="1" class="variants_p" name="3">
+</div></div>
+<hr>
+<p>Is drag and drop possible using HTML5?</p>
+<div class="VAD4">
+<lebel for="0">yes</lebel>
+<lebel for="1">no</lebel>
+<div id="4"><input type="radio" id="0" class="variants_p" name="4">
+<input type="radio" id="1" class="variants_p" name="4">
+</div></div>
+<hr>
+<button onclick="showAnswers()">End Test, Show Answers</button>
+
+</body></html>
