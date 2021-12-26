@@ -1,0 +1,47 @@
+[
+  {
+    "question": "Are the HTML tags and elements the same thing?",
+    "variants": [
+      "yes",
+      "no"
+    ],
+    "answer": "no",
+    "Exp": "HTML elements are defined by a starting tag, may contain some content and a closing tag.For example, &lth1&gt Heading 1 &lt/h1&gt is a HTML element but just &lth1&gt is a starting tag and &lt/h1&gt is a closing tag."
+  },
+  {
+    "question": "Can we display a web page inside a web page or Is nesting of webpages possible?",
+    "variants": [
+      "yes",
+      "no"
+    ],
+    "answer": "yes",
+    "Exp": "We can display a web page inside another HTML web page. HTML provides a tag &ltiframe&gt using which we can achieve this functionality."
+  },
+  {
+    "question": "Is it possible to change an inline element into a block level element?",
+    "variants": [
+      "yes",
+      "no"
+    ],
+    "answer": "yes",
+    "Exp": "It is possible using the “display” property with its value as “block”, to change the inline element into a block-level element."
+  },
+  {
+    "question": "Is the &lt;datalist&gt; tag and &lt;select&gt; tag same?",
+    "variants": [
+      "yes",
+      "no"
+    ],
+    "answer": "no",
+    "Exp": "The &lt;datalist&gt; tag and &lt;select&gt; tag are different. In the case of &ltselect&gt tag a user will have to choose from a list of options, whereas &ltdatalist&gt when used along with the &ltinput&gt tag provides a suggestion that the user selects one of the options given or can enter some entirely different value."
+  },
+  {
+    "question": "Is drag and drop possible using HTML5?",
+    "variants": [
+      "yes",
+      "no"
+    ],
+    "answer": "yes",
+    "Exp": "In HTML5 we can drag and drop an element. This can be achieved using the drag and drop-related events to be used with the element which we want to drag and drop."
+  }
+]
